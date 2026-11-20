@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="hi-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jal Lijiye</title>
+  <meta name="theme-color" content="#FFC23D">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Jal Lijiye">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-state="peek">
+  <main class="stage">
+
+    <div class="sky">
+      <div class="buddy" id="buddy">
+        <button class="buddy-hit" id="buddyHit" aria-label="Jal ko neeche bulaiye">
+          <svg class="jal" id="jal" data-face="ask" viewBox="0 0 200 250" aria-hidden="true">
+            <defs>
+              <clipPath id="inside">
+                <path d="M30 44 L45 210 Q47 224 62 224 L138 224 Q153 224 155 210 L170 44 Z"/>
+              </clipPath>
+              <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#6CC6FA"/>
+                <stop offset="1" stop-color="#1D7FD6"/>
+              </linearGradient>
+            </defs>
+
+            <!-- arms sit behind the glass -->
+            <g class="arm arm-l">
+              <path d="M46 150 Q24 154 19 128" />
+              <circle cx="18" cy="122" r="8.5" />
+            </g>
+            <g class="arm arm-r">
+              <path d="M154 150 Q176 154 181 128" />
+              <circle cx="182" cy="122" r="8.5" />
+            </g>
+
+            <!-- glass -->
+            <path class="glass-body" d="M30 44 L45 210 Q47 224 62 224 L138 224 Q153 224 155 210 L170 44 Z"/>
+            <g clip-path="url(#inside)">
+              <g class="water" id="water">
+                <g class="wave">
+                  <path d="M0 80 Q25 71 50 80 T100 80 T150 80 T200 80 T250 80 T300 80 T350 80 T400 80 V270 H0 Z" fill="url(#waterGrad)"/>
+                </g>
+                <g class="bubbles">
+                  <circle cx="70" cy="200" r="4"/>
+                  <circle cx="132" cy="190" r="3"/>
+                  <circle cx="108" cy="210" r="2.5"/>
+                </g>
+              </g>
+            </g>
+            <ellipse class="rim" cx="100" cy="44" rx="70" ry="10"/>
+            <path class="glass-line" d="M30 44 L45 210 Q47 224 62 224 L138 224 Q153 224 155 210 L170 44"/>
+            <path class="shine" d="M48 68 L57 176"/>
+            <path class="shine" d="M58.6 192 L59.2 198"/>
+
+            <!-- cheeks (all faces) -->
+            <ellipse class="blush" cx="62" cy="156" rx="10" ry="5.5"/>
+            <ellipse class="blush" cx="138" cy="156" rx="10" ry="5.5"/>
+
+            <!-- face: asking -->
+            <g class="face face-ask">
+              <g class="eyes">
+                <ellipse cx="78" cy="136" rx="7.5" ry="9.5"/>
+                <ellipse cx="122" cy="136" rx="7.5" ry="9.5"/>
+                <circle class="glint" cx="80.5" cy="131.5" r="2.6"/>
+                <circle class="glint" cx="124.5" cy="131.5" r="2.6"/>
+              </g>
+              <path class="mouth" d="M90 152 Q100 166 110 152 Q100 157 90 152 Z"/>
+            </g>
+
+            <!-- face: drinking -->
+            <g class="face face-drink">
+              <path class="line" d="M71 129 L83 136 L71 143"/>
+              <path class="line" d="M129 129 L117 136 L129 143"/>
+              <ellipse class="mouth" cx="100" cy="156" rx="6" ry="7"/>
+            </g>
+
+            <!-- face: happy -->
+            <g class="face face-happy">
+              <path class="line" d="M69 140 Q78 127 87 140"/>
+              <path class="line" d="M113 140 Q122 127 131 140"/>
+              <path class="mouth" d="M85 150 Q100 174 115 150 Z"/>
+              <path class="tongue" d="M93 160 Q100 155 107 160 Q100 168 93 160 Z"/>
+              <g class="sparkles">
+                <path d="M22 70 l4 -12 l4 12 l12 4 l-12 4 l-4 12 l-4 -12 l-12 -4 z"/>
+                <path d="M174 84 l3 -9 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 z"/>
+                <path d="M186 40 l2 -6 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2 z"/>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <section class="talk" aria-live="polite">
+      <div class="bubble" id="bubble">
+        <p class="say" id="say">Jal lijiye!</p>
+        <p class="sub" id="sub">Ek glass ho jaaye?</p>
+      </div>
+      <div class="actions" id="actions">
+        <button class="drink" id="drink">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 C12 3 5 11 5 15 a7 7 0 0 0 14 0 C19 11 12 3 12 3 Z"/></svg>
+          Glug glug
+        </button>
+        <button class="later" id="later">Baad mein</button>
+      </div>
+      <div class="rest" id="rest">
+        <p class="next" id="next"></p>
+        <p class="hint">Abhi piya? Upar Jal ko tap kijiye.</p>
+      </div>
+    </section>
+
+    <footer class="today">
+      <div class="glasses" id="glasses" role="img"></div>
+      <p class="count" id="count"></p>
+      <h1 class="wordmark" lang="hi">जल लीजिए</h1>
+
+      <details class="setup">
+        <summary>Phone par setup</summary>
+        <ol>
+          <li>Open <b>Shortcuts</b>, go to <b>Automation</b> and tap <b>New Automation</b>.</li>
+          <li>Pick <b>Time of Day</b>, set <b>8:00 AM</b>, <b>Daily</b>, and choose <b>Run Immediately</b>.</li>
+          <li>Add the action <b>Open URLs</b> and paste this link:
+            <span class="link-row"><code id="remindUrl"></code><button id="copy" type="button">Copy</button></span>
+          </li>
+          <li>Repeat for 10 AM, 12 PM, 2 PM, 4 PM, 6 PM, 8 PM and 10 PM.</li>
+          <li>Keep the ring/silent switch on ring to hear the glug.</li>
+        </ol>
+      </details>
+    </footer>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

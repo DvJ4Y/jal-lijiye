@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="in"><path d="M30 44 L45 210 Q47 224 62 224 L138 224 Q153 224 155 210 L170 44 Z"/></clipPath>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6CC6FA"/><stop offset="1" stop-color="#1D7FD6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#FFC23D"/>
+  <g transform="translate(106 64) scale(1.5)">
+    <path d="M30 44 L45 210 Q47 224 62 224 L138 224 Q153 224 155 210 L170 44 Z" fill="#fff" fill-opacity=".5"/>
+    <g clip-path="url(#in)">
+      <path d="M0 80 Q25 71 50 80 T100 80 T150 80 T200 80 V270 H0 Z" fill="url(#w)"/>
+    </g>
+    <ellipse cx="100" cy="44" rx="70" ry="10" fill="#fff" fill-opacity=".6" stroke="#2A2559" stroke-width="6"/>
+    <path d="M30 44 L45 210 Q47 224 62 224 L138 224 Q153 224 155 210 L170 44" fill="none" stroke="#2A2559" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M48 68 L57 176" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+    <ellipse cx="62" cy="156" rx="10" ry="5.5" fill="#FF7E8E" opacity=".75"/>
+    <ellipse cx="138" cy="156" rx="10" ry="5.5" fill="#FF7E8E" opacity=".75"/>
+    <ellipse cx="78" cy="136" rx="7.5" ry="9.5" fill="#2A2559"/>
+    <ellipse cx="122" cy="136" rx="7.5" ry="9.5" fill="#2A2559"/>
+    <circle cx="80.5" cy="131.5" r="2.6" fill="#fff"/>
+    <circle cx="124.5" cy="131.5" r="2.6" fill="#fff"/>
+    <path d="M90 152 Q100 166 110 152 Q100 157 90 152 Z" fill="#2A2559"/>
+  </g>
+</svg>
