@@ -33,4 +33,4 @@ a gulp, Jal drains, grins and goes back up. Free, no server, no App Store.
 - Does the count survive day to day in Safari/Chrome storage?
 
 ## Next step
-Publish to GitHub Pages (needs OK), then do the setup call on their phone.
+Live at https://dvj4y.github.io/jal-lijiye/ (repo DvJ4Y/jal-lijiye, public). Next: the setup call on their phone, then check the three open questions above.
